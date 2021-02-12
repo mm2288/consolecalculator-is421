@@ -6,18 +6,12 @@ namespace consolecalculator
     {
         static void Main(string[] args)
         {
-            //profs code
 
             //calculator class instantiation into a calculator object
             Calculator _calculator = new Calculator();
 
 
-
-
-
-            //commenting out my code to try to get prof's working
-            
-            Console.WriteLine("Choose which operation you wish to do:");
+            /*Console.WriteLine("Choose which operation you wish to do:");
             Console.WriteLine("Please type 'sum' for addition");
             Console.WriteLine("Please type 'difference' for subtraction");
             Console.WriteLine("Please type 'multiplication' for multiplication");
@@ -34,6 +28,7 @@ namespace consolecalculator
 
             double _input2 = Convert.ToInt32(Console.ReadLine());
             Convert.ToDouble(_input2);
+            */
 
             //test function
             /*
