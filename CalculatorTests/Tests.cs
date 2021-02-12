@@ -1,6 +1,8 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
-using CalculatorOperations;
+//using CalculatorTests;
+using consolecalculator;
+using consolecalculator.CalculatorOperations;
 using System.Collections.Generic;
 using System.Text;
 using System.Reflection;
@@ -17,7 +19,7 @@ namespace CalculatorTests
             Assert.IsInstanceOfType(_calculator, typeof(Calculator));
         }
 
-        [TestMethod()]
+        [TestMethod]
         public void SumTest()
         {
             //arrange
@@ -32,7 +34,7 @@ namespace CalculatorTests
             Assert.AreEqual(_c, 3);
         }
 
-        [TestMethod()]
+        [TestMethod]
         public void DifferenceTest()
         {
             //arrange
@@ -47,7 +49,7 @@ namespace CalculatorTests
             Assert.AreEqual(_c, 2);
         }
 
-        [TestMethod()]
+        [TestMethod]
         public void MultiplicationTest()
         {
             //arrange
@@ -62,7 +64,7 @@ namespace CalculatorTests
             Assert.AreEqual(_c, 15);
         }
 
-        [TestMethod()]
+        [TestMethod]
         public void DivisionTest()
         {
             //arrange
@@ -77,7 +79,7 @@ namespace CalculatorTests
             Assert.AreEqual(_c, 2);
         }
 
-        [TestMethod()]
+        [TestMethod]
         public void CalculationTest()
         {
             double _a = 1;

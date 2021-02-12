@@ -15,89 +15,44 @@ namespace consolecalculator
 
 
 
-
-
             //commenting out my code to try to get prof's working
-            /*
+            
             Console.WriteLine("Choose which operation you wish to do:");
-            Console.WriteLine("Press 1 for addition");
-            Console.WriteLine("Press 2 for subtraction");
-            Console.WriteLine("Press 3 for multiplication");
-            Console.WriteLine("Press 4 for division");
+            Console.WriteLine("Please type 'sum' for addition");
+            Console.WriteLine("Please type 'difference' for subtraction");
+            Console.WriteLine("Please type 'multiplication' for multiplication");
+            Console.WriteLine("Please type 'division' for division");
 
-            int action = Convert.ToInt32(Console.ReadLine());
+            string _action = Convert.ToString(Console.ReadLine());
 
             Console.WriteLine("Type in your first number:");
 
-            int _input1 = Convert.ToInt32(Console.ReadLine());
+            double _input1 = Convert.ToInt32(Console.ReadLine());
+            Convert.ToDouble(_input1);
 
             Console.WriteLine("Enter your second number:");
 
-            int _input2 = Convert.ToInt32(Console.ReadLine());
-            */
-            
-            //int result = 0;
+            double _input2 = Convert.ToInt32(Console.ReadLine());
+            Convert.ToDouble(_input2);
 
-            /*switch(action)
+            //test function
+            /*
+            var _result = _calculator.Calculation[0].GetResult();
+
+            _calculator.CreateCalculation(_input1, _input2, _action);
+
+            _result = _calculator.Calculation[1].GetResult();
+
+            _calculator.Calculation.ForEach(delegate (Calculation calculation)
             {
-                case 1:
-                    {
-                        result = Addition(_input1, _input2);
-                        break;
-                    }
-                case 2:
-                    {
-                        result = Subtraction(_input1, _input2);
-                        break;
-                    }
-                case 3:
-                    {
-                        result = Multiplication(_input1, _input2);
-                        break;
-                    }
-                case 4:
-                    {
-                        result = Division(_input1, _input2);
-                        break;
-                    }
-                default:
-                    {
-                        Console.WriteLine("Please enter two valid numbers.");
-                        break;
-                    }
-            }*/
+                Console.WriteLine(calculation.GetResult());
+            });
+            //test function
+            */
 
-            //Console.WriteLine("The result is: " + result);
-
+            //var _result = CreateCalculation(_input1, _input2);
+            //Console.WriteLine(_calculation.GetResult());
         }
-
-
-       /* public static int Addition(int _input1, int _input2)
-        {
-            int result = _input1 + _input2;
-            return result;
-        }
-
-
-        public static int Subtraction(int _input1, int _input2)
-        {
-            int result = _input1 - _input2;
-            return result;
-        }
-
-
-        public static int Multiplication(int _input1, int _input2)
-        {
-            int result = _input1 * _input2;
-            return result;
-        }
-
-
-        public static int Division(int _input1, int _input2)
-        {
-            int result = _input1 / _input2;
-            return result;
-        }*/
 
     }
 }

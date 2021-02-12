@@ -8,4 +8,10 @@
   <ItemGroup>
     <Folder Include="CalculatorOperations\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="CalculatorTests\CalculatorTests.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="CalculatorTests\Tests.cs" />
+  </ItemGroup>
 </Project>
