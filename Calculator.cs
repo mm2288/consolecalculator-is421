@@ -19,45 +19,6 @@ namespace consolecalculator
 
                 CreateCalculation(a, b, action);
 
-
-
-
-
-
-                //commenting out my code to try to get prof's working
-                //Operations operation = new Operations();
-
-                /*int result = 0;
-
-                switch (action)
-                {
-                    case 1:
-                        {
-                            result = Operations.Addition(_input1, _input2);
-                            break;
-                        }
-                    case 2:
-                        {
-                            result = operation.Subtraction(_input1, _input2);
-                            break;
-                        }
-                    case 3:
-                        {
-                            result = operation.Multiplication(_input1, _input2);
-                            break;
-                        }
-                    case 4:
-                        {
-                            result = operation.Division(_input1, _input2);
-                            break;
-                        }
-                    default:
-                        {
-                            Console.WriteLine("Please enter two valid numbers.");
-                            break;
-                        }
-                }*/
-
             }
 
 
